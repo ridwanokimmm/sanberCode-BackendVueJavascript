@@ -12,6 +12,8 @@ Technical Skill Assessment (Backend) dengan penggunaan express Node.JS, JWT, mys
 
 ## List Path Backend
 > Port: 8080
+
+
 Path Kategori
   - GET localhost:8080/categories (untuk menampilkan seluruh category)
   - POST localhost:8080/categories (untuk membuat category baru)
@@ -25,7 +27,7 @@ Path Buku
   - PATCH localhost:8080/books/:id (untuk update book yang sudah ada berdasarkan id book)
   - DELETE localhost:8080/books/:id (untuk menghapus data book)
     
-Path Buku
+Path Filter
   - localhost:8080/books?sortByTitle=asc&minYear=2000&maxPage=150
   - localhost:8080/books?title=algoritma&minYear=2000&maxYear=2010
   - localhost:8080/categories/1/books?sortByTitle=desc&minYear=2000&maxPage=150
