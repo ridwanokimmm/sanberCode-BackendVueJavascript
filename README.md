@@ -7,8 +7,8 @@ Technical Skill Assessment (Backend) dengan penggunaan express Node.JS, JWT, mys
 ##### Membuat Database "sanbercode" ->
 `Upload SQL pada main code dengan nama 'sanbercode.sql'`
 
-##### Module sudah terinstall & Jalankankan menggunakan
-`node index.js`
+##### Install Module & Jalankankan menggunakan
+`npm install && node index.js`
 
 ## List Path Backend
 > Port: 8080
