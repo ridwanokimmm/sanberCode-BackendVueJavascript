@@ -12,10 +12,20 @@ Technical Skill Assessment (Backend) dengan penggunaan express Node.JS, JWT, mys
 
 ## List Path Backend
 > Port: 8080
-<br>
-* GET localhost:8080/categories (untuk menampilkan seluruh category)
-* asdasd
-<br>
+
+
+### Pemberian ID untuk Header ###
+
+Pada waktu dikonversi menjadi HTML, tiap header akan diberikan id supaya bisa dijadikan tautan. 
+Berikut aturan pemberian id:
+
+  - Semua formatting, link, dsb, dihilangkan.
+  - Semua tanda baca dihapus kecuali underscore, hyphen, dan titik.
+  - Mengganti spasi dan ganti baris dengan hyphen.
+  - Semua huruf dijadikan huruf kecil.
+  - Semua karakter aneh dihapus sampai huruf pertama (id tidak boleh diawali angka atau tanda baca).
+  - Bila habis semua, gunakan id `section`.
+  - 
 ##### Path Filter
 localhost:8080/books?sortByTitle=asc&minYear=2000&maxPage=150
 localhost:8080/books?title=algoritma&minYear=2000&maxYear=2010
