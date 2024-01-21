@@ -1,6 +1,7 @@
 // import express
 import express from "express";
 import multer from "multer";
+import jwt from "jsonwebtoken";
 
 // Import Controller
 import {
@@ -42,7 +43,25 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
+const authenticateToken = (req, res, next) => {
+  const token = req.header("Authorization");
+  console.log(token);
+  if (!token) {
+    return res.status(401).send("Unauthorized: Missing token");
+  }
+
+  jwt.verify(token, 'Token Key: ', (err, user) => {
+    if (err) {
+      return res.status(403).send("Forbidden: Invalid token");
+    }
+
+    req.user = user;
+    next();
+  });
+};
+
 // Akses Publik Untuk File Upload
+router.use(authenticateToken);
 router.use("/uploads", express.static("uploads"));
 
 // Upload
