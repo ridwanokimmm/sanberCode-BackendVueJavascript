@@ -1,6 +1,6 @@
 # Seleksi Beasiswa Bootcamp dan Kerja di Sanbercode
 > Nama: Ridwan Ramadhan
-Technical Skill Assessment (Backend) dengan penggunaan express Node.JS, JWT, mysql, JWT, dan lainya. 
+> Technical Skill Assessment (Backend) dengan penggunaan express Node.JS, JWT, mysql, JWT, dan lainya. 
 
 ## Menjalankan Backend
 
